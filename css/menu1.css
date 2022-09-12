@@ -124,7 +124,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 21px; }
+    font-size: 19px; }
     .blocinside .titre .fa-regular {
       padding-right: 15px; }
   .blocinside .button {
@@ -136,7 +136,7 @@ header {
     padding-right: 15px;
     cursor: pointer; }
     .blocinside .button .fa-solid, .blocinside .button .fa-regular {
-      font-size: 35px; }
+      font-size: 30px; }
     .blocinside .button .fa-solid {
       display: none;
       margin-left: -15px;
