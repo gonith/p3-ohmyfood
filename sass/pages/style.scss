@@ -1,0 +1,261 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../base/base";
+@import "../layout/footer";
+@import "../layout/header";
+@import "../utils/keyframes";
+
+/* SPINNER */
+.spinner {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #333;
+    z-index: 8000;
+    opacity: 1;
+    @include centre;
+    flex-direction: column;
+    animation: fadeout 0.5s forwards;
+    animation-delay: 1.8s;
+
+    h4 {
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Shrikhand', sans-serif;
+    }
+    span {
+        width: 70%;
+        height: 20px;
+        background: linear-gradient(170deg, $rose, $violet );
+        animation: progression 1.5s ease;
+        transform-origin: left;
+    }
+}
+
+/* LOCALISATION */
+    .position {
+        width: 100%;
+        height: 65px;
+        background-color: #eaeaea;
+        z-index: 500;
+        @include centre;
+        box-shadow: inset 0px 4px 7px -4px #333;
+        & p {
+            font-size: 21px;
+            font-weight: 600;
+            color: #606060
+        }
+        & .fa-solid {
+            color:#606060;
+            padding-right: 15px;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    /* INTRODUCTION EXPLORE */
+    .explore {
+        width: 100%;
+        height: 350px;
+        background-color: #f6f6f6;
+        @include centre;
+        flex-direction: column;
+        text-align: center;
+        & h1 {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        & p {
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 21px;
+            margin-top: 15px;
+            color: #606060;
+        }
+        & .btn.search {
+            margin-top: 40px;
+            padding: 20px 20px;
+            border-radius: 50px;
+            color: #fff;
+            border: none;
+            background: linear-gradient(170deg, $rose, $violet );
+            font-size: 19px;
+            font-weight: 500;
+            box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.2);
+            transition: box-shadow 0.3s;
+            transition: border-radius 0.5s;
+            &:hover {
+                box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.4);
+                border-radius: 0;
+            }
+        }
+    }
+    
+    /* FONCTIONNEMENT */
+    .fonction {
+        width: 100%;
+        height: 520px;
+        & h1 {
+            padding-top: 50px;
+            padding-left: 20px;
+            font-size: 28px;
+        }
+        & .container {
+            width: 100%;
+            height: 380px;
+            @include centre;
+            flex-direction: column;
+        }
+        & .howto {
+            width: 85%;
+            height: 90px;
+            border-radius: 35px;
+            margin-top: 30px;
+            display:flex;
+            align-items: center;
+            z-index: 2000;
+            background-color: #f6f6f6;
+            box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.1);
+            cursor: pointer;
+        }
+        & .howto:hover {
+            background-color: #f5edff;
+            box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.3);
+            & .fa-solid {
+                color: $violet;
+            }
+        }
+        & p {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @include centre;
+            margin-left: -15px;
+            z-index: 10000;
+            background-color: $violet;
+            color: #fff;
+        }
+        & .fa-solid {
+            font-size: 23px;
+            padding-left: 25px;
+            color: #7d7d7d;
+        }
+        & h3 {
+            padding-left: 25px;
+        }
+    }
+    
+    /* NOS RESTAURANTS */
+    .resto {
+        width: 100%;
+        height: 1650px;
+        background-color: #f6f6f6;
+        & h1 {
+            padding-top: 60px;
+            padding-left: 20px;
+        }
+        & .restaurants {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 1500px;
+            margin-top: 10px;
+        }
+        & .content {
+            width: 90%;
+            height: 340px;
+            border-radius: 25px;
+            box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.1);
+            position: relative;
+            z-index: 5000;
+            &:hover {
+                box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.3);
+            }
+        }
+        & .image {
+            width: 100%;
+            height: 75%;
+        }
+        & .image img {
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            object-fit: cover;
+        }
+        & .nouveau {
+            position: relative;
+            top: -95%;
+            z-index: 10000;
+            display:flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+        }
+        & .nouveau p {
+            padding: 10px 15px;
+            width: 25%;
+            border-radius: 5px;
+            background-color: $vert;
+            color: #0d8f6f;
+            font-weight: 600;
+            @include centre;
+        }
+        }
+        .titre {
+            width: 100%;
+            height: 25%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            background-color: #fff;
+            border-bottom-left-radius:  25px;
+            border-bottom-right-radius: 25px;
+        }
+        .text {
+            color: black;
+        }
+        .titre p {
+            font-size: 20px;
+        }
+
+.keur {
+    width:40px;
+    height: 40px;  
+    z-index: 1000;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    margin-left: -2.5px;
+}
+.coeurs {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    .fa-regular, .fa-solid {
+        font-size: 35px;
+        position: relative;
+        top: -40px;
+        z-index: 500;
+    }
+    .fa-regular {
+        color: black;
+    }
+    .fa-solid {
+        opacity: 0;
+        color: $violet;
+    }
+    .keur:checked ~ .button {
+        .fa-regular {
+            opacity: 0;
+        }
+        .fa-solid {
+            opacity: 1;
+            transform: translateY(-35px);
+        }
+    }
+}
+        

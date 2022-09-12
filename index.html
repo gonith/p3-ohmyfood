@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c4d76ce08c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bloc_page">
+        <!-- SPINNER -->
+        <div class="spinner">
+            <h4>Ohmyfood</h4>
+            <span></span>
+        </div>
+        <!-- LOGO HEADER -->
+        <header>
+            <div class="logo">
+                <img src="images/ohmyfood.png" alt="Logo">
+            </div>
+            <!-- Images Menu -->
+        </header>
+        <!-- LOCALISATION -->
+            <div class="position">
+                <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p> <!-- balise input -->
+            </div>
+            <!-- INTRODUCTION EXPLORE -->
+            <div class="explore">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
+                <a href="#nosrestos" class="btn search">Explorer nos restaurants</a>
+            </div>
+
+            <!-- FONCTIONNEMENTS -->
+            <section>
+                <div class="fonction">
+                    <h1>Fonctionnement</h1>
+                    <div class="container">
+                        <div class="howto">
+                            <p>1</p>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h3>Choisissez un restaurant</h3>
+                        </div>
+                        <div class="howto">
+                            <p>2</p>
+                            <i class="fa-solid fa-list-ul"></i>
+                            <h3>Composez votre menu</h3>
+                        </div>
+                        <div class="howto">
+                            <p>3</p>
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Dégustez au restaurant</h3>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+
+            <!-- NOS RESTAURANTS -->
+            <section class="resto" id="nosrestos">
+                <h1>Restaurants</h1>
+                <div class="restaurants">
+                    <a href="menu1.html" class="content">
+                        <div class="image">
+                            <img src="images/restau1.jpg">
+                            <div class="nouveau">
+                                <p>Nouveau</p>
+                            </div>
+                        </div>
+
+                            <div class="titre">
+                                <div class="text">
+                                    <h2>La palette du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="coeurs">
+                                    <input type="checkbox" name="keur" id="keur" class="keur" />
+                                    <label for="keur" class="button">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                    </a>
+
+                    <a href="menu2.html" class="content">
+                        <div class="image">
+                            <img src="images/restau2.jpg"> 
+                            <div class="nouveau">
+                                <p>Nouveau</p>
+                            </div>
+                        </div>
+
+                            <div class="titre">
+                                <div class="text">
+                                    <h2>La note enchantée</h2>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="coeurs">
+                                    <input type="checkbox" name="keur" id="keur" class="keur" />
+                                    <label for="keur" class="button">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                    </a>
+
+                    <a href="menu3.html" class="content">
+                        <div class="image">
+                            <img src="images/restau3.jpg"> 
+                        </div>
+
+                            <div class="titre">
+                                <div class="text">
+                                    <h2>À la française</h2>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="coeurs">
+                                    <input type="checkbox" name="keur" id="keur" class="keur" />
+                                    <label for="keur" class="button">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                    </a>
+
+                    <a href="menu4.html" class="content">
+                        <div class="image">
+                           <img src="images/restau4.jpg"> 
+                        </div>
+
+                            <div class="titre">
+                                <div class="text">
+                                    <h2>Le délice des sens</h2>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="coeurs">
+                                    <input type="checkbox" name="keur" id="keur" class="keur" />
+                                    <label for="keur" class="button">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <h3>Ohmyfood</h3>
+
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-utensils"></i><span>Proposer un restaurant</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </footer>
+    </div>
+</body>
+</html>

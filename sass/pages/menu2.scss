@@ -1,0 +1,13 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../base/base";
+@import "../layout/footer";
+@import "../layout/header";
+@import "../pages/menu1.scss";
+
+.menu {
+    height: 1450px;
+}
+.entrees {
+    height: 400px;
+}
