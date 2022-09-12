@@ -48,7 +48,7 @@ header {
         display:flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 19px;
+        font-size: 18px;
         .fa-regular {
             padding-right: 15px;
         }
@@ -62,7 +62,7 @@ header {
         padding-right: 15px;
         cursor: pointer;
         .fa-solid, .fa-regular {
-            font-size: 30px;
+            font-size: 25px;
         }
         .fa-solid {
             display:none;
@@ -180,7 +180,7 @@ header {
         transition: all 0.5s ease-in-out;
         animation-fill-mode: none;
         span {
-            margin-left: 15px;
+            margin-left: 10px;
         }
     }
     .checked {

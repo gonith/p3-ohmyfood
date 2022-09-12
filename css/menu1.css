@@ -124,7 +124,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 19px; }
+    font-size: 18px; }
     .blocinside .titre .fa-regular {
       padding-right: 15px; }
   .blocinside .button {
@@ -136,7 +136,7 @@ header {
     padding-right: 15px;
     cursor: pointer; }
     .blocinside .button .fa-solid, .blocinside .button .fa-regular {
-      font-size: 30px; }
+      font-size: 25px; }
     .blocinside .button .fa-solid {
       display: none;
       margin-left: -15px;
@@ -239,7 +239,7 @@ header {
   transition: all 0.5s ease-in-out;
   animation-fill-mode: none; }
   .prix span {
-    margin-left: 15px; }
+    margin-left: 10px; }
 
 .checked {
   width: 30%;
