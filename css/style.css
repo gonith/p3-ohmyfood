@@ -139,11 +139,12 @@ footer {
   text-align: center; }
   .explore h1 {
     padding-left: 10%;
-    padding-right: 10%; }
+    padding-right: 10%;
+    font-size: 28px; }
   .explore p {
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 21px;
+    font-size: 19px;
     margin-top: 15px;
     color: #606060; }
   .explore .btn.search {
@@ -165,7 +166,8 @@ footer {
 /* FONCTIONNEMENT */
 .fonction {
   width: 100%;
-  height: 520px; }
+  height: 520px;
+  background-color: #fff; }
   .fonction h1 {
     padding-top: 50px;
     padding-left: 20px;
@@ -186,11 +188,11 @@ footer {
     align-items: center;
     z-index: 2000;
     background-color: #f6f6f6;
-    box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.1);
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.1);
     cursor: pointer; }
   .fonction .howto:hover {
     background-color: #f5edff;
-    box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.3); }
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.3); }
     .fonction .howto:hover .fa-solid {
       color: #9356DC; }
   .fonction p {
@@ -209,15 +211,16 @@ footer {
     padding-left: 25px;
     color: #7d7d7d; }
   .fonction h3 {
-    padding-left: 25px; }
+    padding-left: 25px;
+    font-size: 17px; }
 
 /* NOS RESTAURANTS */
 .resto {
   width: 100%;
-  height: 1650px;
+  height: 1640px;
   background-color: #f6f6f6; }
   .resto h1 {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: 20px; }
   .resto .restaurants {
     display: flex;
@@ -225,8 +228,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 1500px;
-    margin-top: 10px; }
+    height: 1500px; }
   .resto .content {
     width: 90%;
     height: 340px;
@@ -278,8 +280,11 @@ footer {
 .text {
   color: black; }
 
+.titre h2 {
+  font-size: 21px; }
+
 .titre p {
-  font-size: 20px; }
+  font-size: 19px; }
 
 .keur {
   width: 40px;
@@ -293,7 +298,7 @@ footer {
 .coeurs {
   width: 40px;
   height: 40px;
-  margin-right: 40px; }
+  margin-right: 30px; }
   .coeurs .fa-regular, .coeurs .fa-solid {
     font-size: 35px;
     position: relative;
@@ -309,5 +314,43 @@ footer {
   .coeurs .keur:checked ~ .button .fa-solid {
     opacity: 1;
     transform: translateY(-35px); }
+
+@media screen and (min-width: 992px) {
+  .logo {
+    height: 110px; }
+
+  .fonction h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px; }
+
+  .fonction h3 {
+    font-size: 20px; }
+
+  .fonction .howto {
+    width: 60%; }
+
+  .resto {
+    height: 950px; }
+
+  .resto h1 {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center; }
+
+  .resto .restaurants {
+    height: 800px;
+    flex-direction: initial;
+    margin-top: 0px;
+    flex-wrap: wrap; }
+
+  .resto .content {
+    width: 45%; }
+
+  .explore .btn.search {
+    border-radius: 0px; }
+    .explore .btn.search:hover {
+      border-radius: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+@media screen and (min-width: 992px) {
+    .logo {
+        height: 110px;
+    }
+    .fonction h1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .fonction h3 {
+        font-size: 20px;
+    }
+    .fonction .howto {
+        width: 60%;
+    }
+    .resto {
+        height: 950px;
+    }
+    .resto h1  {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .resto .restaurants {
+        height: 800px;
+        flex-direction: initial;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+    .resto .content {
+        width: 45%;
+    }
+    .explore .btn.search {
+        border-radius: 0px;
+        &:hover {
+            border-radius: 50px;
+        }
+    }
+}

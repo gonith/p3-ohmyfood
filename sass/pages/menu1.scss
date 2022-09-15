@@ -108,13 +108,13 @@ header {
     height: 85px;
     background: white;
     border-radius: 25px;
-    box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.1);
+    @include shadow;
     cursor: pointer;
     animation: fadein 0.5s forwards ease;
     animation-fill-mode: both;
     overflow: hidden;
     &:hover {
-        box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.3);
+        @include hovershadow;
     }
 }
 .a {
@@ -228,10 +228,10 @@ input[type="checkbox"] {
         background: linear-gradient(170deg, $rose, $violet );
         font-size: 19px;
         font-weight: 500;
-        box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.2);
+        @include btnshadow;
         transition: border-radius 0.5s;
         &:hover {
-            box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.4);
+            @include hoverbtnshadow;
         }
     }
 }
@@ -239,3 +239,5 @@ input[type="checkbox"] {
 footer {
     margin-top: -60px;
 }
+
+@import "../mediaqueries/mediaqueriesmenu1";

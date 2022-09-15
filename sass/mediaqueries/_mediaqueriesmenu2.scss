@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import "./mediaqueriesmenu1";
+
+@media screen and (min-width: 992px) {
+    .menu {
+        height: 1520px;
+    }
+    .entrees {
+        height: 470px;
+    }
+}

@@ -232,13 +232,13 @@ header {
   height: 85px;
   background: white;
   border-radius: 25px;
-  box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.1);
   cursor: pointer;
   animation: fadein 0.5s forwards ease;
   animation-fill-mode: both;
   overflow: hidden; }
   .toggle-content:hover {
-    box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.3); }
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.3); }
 
 .a {
   animation-delay: 0s; }
@@ -351,5 +351,65 @@ input[type="checkbox"] {
 
 footer {
   margin-top: -60px; }
+
+@media screen and (min-width: 992px) {
+  .logo {
+    height: 110px; }
+    .logo a {
+      left: -5%;
+      font-size: 35px; }
+
+  .menu {
+    height: 1500px; }
+
+  .text h2 {
+    font-size: 21px; }
+
+  .text p {
+    font-size: 19px; }
+
+  .prix span {
+    font-size: 19px; }
+
+  .blocinside .titre {
+    width: 100%;
+    justify-content: center;
+    font-size: 30px; }
+
+  .blocinside {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; }
+    .blocinside h3 {
+      width: 7%;
+      font-size: 23px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+  .blocinside .button .fa-solid, .blocinside .button .fa-regular {
+    font-size: 40px; }
+
+  .blocinside .button {
+    position: relative;
+    left: 60px; }
+
+  .entrees, .plats, .desserts {
+    width: 60%;
+    margin-top: 0px;
+    height: 350px; }
+
+  .checked {
+    width: 10%; }
+
+  .prix {
+    margin-right: -10%; }
+
+  .commander {
+    height: 180px; }
+    .commander .btn.command {
+      margin-bottom: 0px; } }
 
 /*# sourceMappingURL=menu4.css.map */

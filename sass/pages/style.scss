@@ -64,11 +64,12 @@
         & h1 {
             padding-left: 10%;
             padding-right: 10%;
+            font-size: 28px;
         }
         & p {
             padding-left: 5%;
             padding-right: 5%;
-            font-size: 21px;
+            font-size: 19px;
             margin-top: 15px;
             color: #606060;
         }
@@ -78,14 +79,14 @@
             border-radius: 50px;
             color: #fff;
             border: none;
-            background: linear-gradient(170deg, $rose, $violet );
+            background: linear-gradient(170deg, $rose, $violet);
             font-size: 19px;
             font-weight: 500;
-            box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.2);
+            @include btnshadow;
             transition: box-shadow 0.3s;
             transition: border-radius 0.5s;
             &:hover {
-                box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.4);
+                @include hoverbtnshadow;
                 border-radius: 0;
             }
         }
@@ -95,6 +96,7 @@
     .fonction {
         width: 100%;
         height: 520px;
+        background-color: #fff;
         & h1 {
             padding-top: 50px;
             padding-left: 20px;
@@ -115,12 +117,12 @@
             align-items: center;
             z-index: 2000;
             background-color: #f6f6f6;
-            box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.1);
+            @include shadow;
             cursor: pointer;
         }
         & .howto:hover {
             background-color: #f5edff;
-            box-shadow: 1px 6px 6px 0px rgba(67, 66, 66, 0.3);
+            @include hovershadow;
             & .fa-solid {
                 color: $violet;
             }
@@ -142,16 +144,17 @@
         }
         & h3 {
             padding-left: 25px;
+            font-size: 17px;
         }
     }
     
     /* NOS RESTAURANTS */
     .resto {
         width: 100%;
-        height: 1650px;
+        height: 1640px;
         background-color: #f6f6f6;
         & h1 {
-            padding-top: 60px;
+            padding-top: 50px;
             padding-left: 20px;
         }
         & .restaurants {
@@ -161,17 +164,16 @@
             align-items: center;
             width: 100%;
             height: 1500px;
-            margin-top: 10px;
         }
         & .content {
             width: 90%;
             height: 340px;
             border-radius: 25px;
-            box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.1);
+            @include shadow;
             position: relative;
             z-index: 5000;
             &:hover {
-                box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.3);
+                @include hovershadow;
             }
         }
         & .image {
@@ -218,8 +220,11 @@
         .text {
             color: black;
         }
+        .titre h2 {
+            font-size: 21px;
+        }
         .titre p {
-            font-size: 20px;
+            font-size: 19px;
         }
 
 .keur {
@@ -234,7 +239,7 @@
 .coeurs {
     width: 40px;
     height: 40px;
-    margin-right: 40px;
+    margin-right: 30px;
     .fa-regular, .fa-solid {
         font-size: 35px;
         position: relative;
@@ -258,4 +263,5 @@
         }
     }
 }
-        
+
+@import "../mediaqueries/mediaqueries";
