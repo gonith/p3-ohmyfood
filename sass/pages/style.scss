@@ -40,7 +40,7 @@
         z-index: 500;
         @include centre;
         box-shadow: inset 0px 4px 7px -4px #333;
-        & p {
+        & label {
             font-size: 21px;
             font-weight: 600;
             color: #606060
@@ -51,6 +51,9 @@
             font-size: 21px;
             margin-bottom: 5px;
         }
+    }
+    #loc {
+        display:none;
     }
     
     /* INTRODUCTION EXPLORE */
