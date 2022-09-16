@@ -117,18 +117,18 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 4px 7px -4px #333; }
-  .position label {
+  .position #loc {
     font-size: 21px;
     font-weight: 600;
-    color: #606060; }
+    color: #606060;
+    border: none;
+    background-color: #eaeaea;
+    width: 180px; }
   .position .fa-solid {
     color: #606060;
     padding-right: 15px;
     font-size: 21px;
     margin-bottom: 5px; }
-
-#loc {
-  display: none; }
 
 /* INTRODUCTION EXPLORE */
 .explore {
@@ -289,34 +289,50 @@ footer {
 .titre p {
   font-size: 19px; }
 
-.keur {
-  width: 40px;
-  height: 40px;
-  z-index: 1000;
-  opacity: 0;
-  position: relative;
-  cursor: pointer;
-  margin-left: -2.5px; }
-
 .coeurs {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 30px; }
-  .coeurs .fa-regular, .coeurs .fa-solid {
-    font-size: 35px;
-    position: relative;
-    top: -40px;
-    z-index: 500; }
-  .coeurs .fa-regular {
-    color: black; }
-  .coeurs .fa-solid {
-    opacity: 0;
-    color: #9356DC; }
-  .coeurs .keur:checked ~ .button .fa-regular {
-    opacity: 0; }
-  .coeurs .keur:checked ~ .button .fa-solid {
-    opacity: 1;
-    transform: translateY(-35px); }
+
+.keur {
+  display: none; }
+
+.button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+
+.button .fa-regular, .fa-solid {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 35px;
+  transition: all 0.5s ease-in-out; }
+
+.button .fa-regular {
+  opacity: 1;
+  color: black; }
+
+.button .fa-solid {
+  transform: translateY(-100%);
+  opacity: 0;
+  margin-left: -100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC); }
+
+input[type='checkbox']:checked + .button .fa-regular {
+  opacity: 0; }
+
+input[type='checkbox']:checked + .button .fa-solid {
+  opacity: 1;
+  margin-left: 0%; }
 
 @media screen and (min-width: 992px) {
   .logo {
