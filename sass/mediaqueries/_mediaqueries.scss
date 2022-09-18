@@ -1,6 +1,6 @@
 @import "../utils/variables";
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
     .logo {
         height: 110px;
     }
@@ -33,10 +33,5 @@
     .resto .content {
         width: 45%;
     }
-    .explore .btn.search {
-        border-radius: 0px;
-        &:hover {
-            border-radius: 50px;
-        }
-    }
+
 }

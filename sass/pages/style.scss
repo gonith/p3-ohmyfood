@@ -50,7 +50,7 @@
         }
         & .fa-solid {
             color:#606060;
-            padding-right: 15px;
+            padding-right: 10px;
             font-size: 21px;
             margin-bottom: 5px;
         }
@@ -86,11 +86,10 @@
             font-size: 19px;
             font-weight: 500;
             @include btnshadow;
-            transition: box-shadow 0.3s;
-            transition: border-radius 0.5s;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 @include hoverbtnshadow;
-                border-radius: 0;
+                filter: brightness(1.1);
             }
         }
     }
@@ -122,6 +121,7 @@
             background-color: #f6f6f6;
             @include shadow;
             cursor: pointer;
+            transition: all 0.2s ease-in-out;
         }
         & .howto:hover {
             background-color: #f5edff;
@@ -175,8 +175,10 @@
             @include shadow;
             position: relative;
             z-index: 5000;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 @include hovershadow;
+                filter: brightness(1.1);
             }
         }
         & .image {

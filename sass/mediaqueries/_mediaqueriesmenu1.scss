@@ -1,6 +1,6 @@
 @import "../utils/variables";
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
     .logo {
         height: 110px;
         a {
@@ -48,15 +48,18 @@
         top: -7px;
     }
     .entrees, .plats, .desserts {
-        width: 60%;
+        width: 75%;
         margin-top: 0px;
         height: 350px;
     }
     .checked {
-        width: 10%;
+        width: 20%;
+        .fa-solid {
+            font-size: 30px;
+        }
     }
     .prix {
-        margin-right: -10%;
+        margin-right: -15%;
     }
     .commander {
         height: 180px;
@@ -64,5 +67,13 @@
             margin-bottom: 0px;
         }
     }
+}
 
+@media screen and (min-width: 992px) {
+    .entrees, .plats, .desserts {
+        width: 75%;
+    }
+    .checked {
+        width: 15%;
+    }
 }
