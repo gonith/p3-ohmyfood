@@ -1,0 +1,47 @@
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 240px;
+    background-color: #353535;
+    z-index: 8000;
+    & h3 {
+        font-family: 'Shrikhand', sans-serif;
+        padding-top: 25px;
+        padding-left: 25px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    & ul {
+        padding-left: 25px;
+        list-style-type: none;
+        margin-top: 20px;
+    }  
+    & ul .fa-solid {
+        font-size: 15px;
+        padding-right: 10px;
+        color: #fff;
+    }
+    & .fa-solid.fa-utensils {
+        font-size: 17px;
+    }
+    & li {
+        font-size: 19px;
+        color: #fff;
+        margin-top: 8px;
+        }
+        & a {
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+        & a:hover {
+            color: $rose;
+            & .fa-solid {
+                color: $rose;
+            }
+        }
+    & span {
+        padding-left: 4px;
+    }
+}

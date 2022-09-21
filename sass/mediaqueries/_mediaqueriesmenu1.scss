@@ -1,0 +1,79 @@
+@import "../utils/variables";
+
+@media screen and (min-width: 767px) {
+    .logo {
+        height: 110px;
+        a {
+        left: -5%;
+        font-size: 35px;
+        }
+    }
+    .menu {
+        height: 1500px;
+    }
+    .text h2 {
+        font-size: 21px;
+    }
+    .text p {
+        font-size: 19px;
+    }
+    .prix span {
+        font-size: 19px;
+    }
+    .blocinside .titre {
+        width: 100%;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .blocinside {
+        display:flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            width: 7%;
+            font-size: 23px;
+            display:flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .blocinside .button .fa-solid, .blocinside .button .fa-regular {
+        font-size: 40px;
+    }
+    .blocinside .button {
+        position: relative;
+        left: 60px;
+        top: -7px;
+    }
+    .entrees, .plats, .desserts {
+        width: 75%;
+        margin-top: 0px;
+        height: 350px;
+    }
+    .checked {
+        width: 20%;
+        .fa-solid {
+            font-size: 30px;
+        }
+    }
+    .prix {
+        margin-right: -15%;
+    }
+    .commander {
+        height: 180px;
+        .btn.command {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .entrees, .plats, .desserts {
+        width: 75%;
+    }
+    .checked {
+        width: 15%;
+    }
+}

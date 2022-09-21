@@ -1,0 +1,21 @@
+@mixin centre {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin shadow {
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.1)
+}
+
+@mixin hovershadow {
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.3);
+}
+
+@mixin btnshadow {
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.2);
+}
+
+@mixin hoverbtnshadow {
+    box-shadow: 0px 5px 5px 0px rgba(67, 66, 66, 0.4);
+}

@@ -1,0 +1,12 @@
+/* LOGO HEADER */
+.logo {
+    width: 100%;
+    height: 80px;
+    @include centre;
+    background-color: #fff;
+    z-index: 1000;
+    & img {
+        max-width: 50%;
+        height: auto;
+    }
+    }
