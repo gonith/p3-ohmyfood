@@ -9,29 +9,29 @@
         display: flex;
         justify-content: center;
         padding-left: 0px;
+        h3 {
+            font-size: 20px;
+        }
     }
-    .fonction h3 {
-        font-size: 20px;
-    }
-    .fonction .howto {
+    
+    .fonction__container__howto {
         width: 60%;
     }
     .resto {
         height: 950px;
+        h1  {
+            padding-left: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        &__restaurants {
+            height: 800px;
+            flex-direction: initial;
+            margin-top: 0px;
+            flex-wrap: wrap;
+            &__content {
+                width: 45%;
+            }
+        }
     }
-    .resto h1  {
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    .resto .restaurants {
-        height: 800px;
-        flex-direction: initial;
-        margin-top: 0px;
-        flex-wrap: wrap;
-    }
-    .resto .content {
-        width: 45%;
-    }
-
 }
