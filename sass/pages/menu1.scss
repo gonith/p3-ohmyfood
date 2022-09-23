@@ -52,12 +52,13 @@ header {
         .fa-regular {
             padding-right: 15px;
         }
+        &__coeurs {
+            width: 25px;
+            height: 25px;
+            @include centre;
+        }
     }
-    .coeurs {
-        width: 25px;
-        height: 25px;
-        @include centre;
-    }
+    
     .keur {
         display:none;
     }
