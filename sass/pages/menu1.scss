@@ -121,7 +121,7 @@ header {
     margin-top: 5px;
 }
 
-.toggle-content {
+.cards {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -134,10 +134,75 @@ header {
     animation: fadein 0.5s forwards ease;
     animation-fill-mode: both;
     overflow: hidden;
-    &:hover {
-        @include hovershadow;
+    .text {
+        width: 90%;
+        padding-left: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        h2 {
+            font-size: 18px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        p {
+            font-size: 15px;;
+            margin-top: 3px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        span {
+            margin-right: 15px;
+            font-weight: 800;
+        }
+    }
+    .prix {
+        margin-top: 25px;
+        font-weight: 900;
+        margin-right: -25%;
+        transition: all 0.5s ease-in-out;
+        animation-fill-mode: none;
+        span {
+            margin-left: 10px;
+        }
+    }
+    .checked {
+        width: 30%;
+        height: 85px;
+        background-color: $vert;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        transition: all 0.5s ease-in-out;
+        @include centre;
+        transform: translateX(100%);
+        margin-left: 15px;
+        .fa-solid {
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+            font-size: 0px;
+            color: #fff;
+            z-index: 1200;
+        }
     }
 }
+
+.cards:active {
+    @include hovershadow;
+    & .checked {
+        transform: translateX(0%);
+    }
+    & .checked .fa-solid {
+        opacity: 1;
+        transform: rotate(360deg);
+        font-size: 30px;
+    }
+    & .prix {
+        margin-right: 0%;
+    }
+}
+
 .a {
     animation-delay: 150ms;
 }
@@ -167,74 +232,6 @@ header {
 }
 .j {
     animation-delay: 1500ms;
-}
-
-    .text {
-        width: 90%;
-        padding-left: 15px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        h2 {
-            font-size: 18px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        p {
-            font-size: 15px;;
-            margin-top: 3px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        span {
-            margin-right: 15px;
-            font-weight: 800;
-        }
-    }
-
-    .prix {
-        margin-top: 25px;
-        font-weight: 900;
-        margin-right: -25%;
-        transition: all 0.5s ease-in-out;
-        animation-fill-mode: none;
-        span {
-            margin-left: 10px;
-        }
-    }
-    .checked {
-        width: 30%;
-        height: 85px;
-        background-color: $vert;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        transition: all 0.5s ease-in-out;
-        @include centre;
-        transform: translateX(100%);
-        margin-left: 15px;
-        .fa-solid {
-            opacity: 0;
-            transition: all 0.5s ease-in-out;
-            font-size: 0px;
-            color: #fff;
-            z-index: 1200;
-        }
-    }
-input[type="checkbox"] {
-    display:none;
-    &:checked + .toggle-content .checked {
-        transform: translateX(0%);
-    }
-    &:checked + .toggle-content .checked .fa-solid {
-        opacity: 1;
-        transform: rotate(360deg);
-        font-size: 30px;
-    }
-    &:checked + .toggle-content .prix {
-        margin-right: 0%;
-    }
 }
 
 .commander {

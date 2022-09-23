@@ -52,13 +52,13 @@
         margin-top: 0px;
         height: 350px;
     }
-    .checked {
+    .cards .checked {
         width: 20%;
         .fa-solid {
             font-size: 30px;
         }
     }
-    .prix {
+    .cards .prix {
         margin-right: -15%;
     }
     .commander {
@@ -73,7 +73,7 @@
     .entrees, .plats, .desserts {
         width: 75%;
     }
-    .checked {
+    .cards .checked {
         width: 15%;
     }
 }
